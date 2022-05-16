@@ -6,11 +6,11 @@ Organized my _dotfiles_!!
 
 ### Themes
 
-ambient | theme
-:---: | : --- :
-shell | [spaceship](https://github.com/spaceship-prompt/spaceship-prompt)
-tmux | [dracula](https://draculatheme.com/tmux)
-vim | wip
+| ambient | theme |
+| --- | --- |
+| shell | [spaceship](https://github.com/spaceship-prompt/spaceship-prompt) |
+| tmux | [dracula](https://draculatheme.com/tmux) |
+| vim | wip |
 
 ### Command Line Tools
 

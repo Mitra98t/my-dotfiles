@@ -54,6 +54,7 @@ Choose what you want to install:
 | `-t` | tmux plugins and theme |
 | `-v` | vim plugins and theme | 
 
+Open tmux and press `Ctrl+k r` to source tmux.conf and `Ctrl+k Shift+i` to install plugins 
 
 
 

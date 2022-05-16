@@ -15,10 +15,11 @@ while getopts ":stv" opt; do
     esac
 done
 
+sudo apt update
+
 if $SHELL
 then
     echo "Installing shell tools..."
-    sudo apt update
     sudo apt install exa
     sudo apt install bat
     sudo apt-get install ripgrep
@@ -38,3 +39,15 @@ then
     exec zsh
 fi
 
+if $TMUX
+then
+    echo "Installing tmux and plugins"
+    sudo apt install tmux
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    echo "Cloning configs"
+    rm .tmux.conf
+    cp ./dotfiles/tmux.conf.template ~/.tmux.conf
+    echo "All tmux stuff installed!!\nReloading Tmux!"
+    sleep 3
+    tmux source-file ~/.tmux.conf
+fi

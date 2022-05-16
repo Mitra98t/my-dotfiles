@@ -32,7 +32,7 @@ then
     echo "Setting up config directory..."
     mkdir -p ~/.zshrc.d/aliases
     cp ./dotfiles/aliases/* ~/.zshrc.d/aliases
-    rm .zshrc
+    mv .zshrc .zshrc.old
     cp ./dotfiles/zshrc.template ~/.zshrc
     echo "All shell suff installed!!\nRestarting shell!"
     sleep 3

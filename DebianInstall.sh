@@ -32,8 +32,12 @@ then
     echo "Setting up config directory..."
     mkdir -p ~/.zshrc.d/aliases
     cp ./dotfiles/aliases/* ~/.zshrc.d/aliases
-    mv .zshrc .zshrc.old
-    cp ./dotfiles/zshrc.template ~/.zshrc
+    if cmp -s ./dotfiles/zshrc.template ~/.zshrc ; then
+        echo ".zshrc already setted"
+    else
+        [ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.old.$(date +%N)
+        cp ./dotfiles/zshrc.template ~/.zshrc
+    fi
     echo "All shell suff installed!!\nRestarting shell!"
     sleep 3
     exec zsh
@@ -45,9 +49,12 @@ then
     sudo apt install tmux
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
     echo "Cloning configs"
-    rm .tmux.conf
-    cp ./dotfiles/tmux.conf.template ~/.tmux.conf
+    if cmp -s ./dotfiles/tmux.conf.template ~/.tmux.conf ; then
+        echo ".tmux.conf already setted"
+    else
+        [ -f ~/.tmux.conf ] && mv ~/.tmux.conf ~/.tmux.conf.old.$(date +%N)
+        cp ./dotfiles/tmux.conf.template ~/.tmux.conf
+    fi
     echo "All tmux stuff installed!!\nReloading Tmux!"
     sleep 3
-    tmux source-file ~/.tmux.conf
 fi

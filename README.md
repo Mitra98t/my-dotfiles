@@ -54,7 +54,15 @@ Choose what you want to install:
 | `-t` | tmux plugins and theme |
 | `-v` | vim plugins and theme | 
 
-Open tmux and press `Ctrl+k r` to source tmux.conf and `Ctrl+k Shift+i` to install plugins 
+If a configuration file already existed it will be renamed as `filename.old.<nanosecond>` so that every name is different.
+
+### ZSH
+
+To safe some stuff from the old `.zshrc` configuration to the new one you can copy paste or source the old file using the last commented line in the new `.zshrc`
+
+### TMUX
+
+Open tmux and press `Ctrl+k r` to source .tmux.conf and `Ctrl+k Shift+i` to install plugins 
 
 
 

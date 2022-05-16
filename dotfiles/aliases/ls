@@ -1,0 +1,12 @@
+# Exa aliase
+alias "ll"="exa -l"
+alias "llt"="exa -l --tree"
+alias "l"="exa -lahF"
+alias "lt"="exa -lahF --tree"
+alias "lst"="exa --tree"
+
+function mkcd(){
+    mkdir $1 && cd $1
+}
+
+

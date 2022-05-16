@@ -33,6 +33,9 @@ Organized my _dotfiles_!!
 For the installation you **will need**:
 
 - `zsh` using `oh-my-zsh`
+- Install [spaceship](https://github.com/spaceship-prompt/spaceship-prompt)
+    - use `git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1`
+    - and `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"`
 - **Only for Mac-OS**
     - `homebrew`
 
@@ -47,13 +50,9 @@ Choose what you want to install:
 
 | flag | installs |
 | --- | --- |
-| `--shell` | zsh plugins and theme |
-| `--tmux` | tmux plugins and theme |
-| `--vim` | vim plugins and theme | 
-
-Wait for the installation of all the packages.
-
-Restart the shell run: `esec zsh`
+| `-s` | zsh plugins and theme |
+| `-t` | tmux plugins and theme |
+| `-v` | vim plugins and theme | 
 
 
 

@@ -39,17 +39,17 @@ For the installation you **will need**:
 Once the prerequisites are met you can run the installation file:
 
 | platform | file |
-| :---: | :---: |
+| --- | --- |
 | Mac-OS | MacOsInstall.sh |
 | Debian | DebianInstall.sh |
 
 Choose what you want to install:
 
 | flag | installs |
-| :---: | :---: |
-| --shell | zsh plugins and theme |
-| --tmux | tmux plugins and theme |
-| --vim | vim plugins and theme | 
+| --- | --- |
+| `--shell` | zsh plugins and theme |
+| `--tmux` | tmux plugins and theme |
+| `--vim` | vim plugins and theme | 
 
 Wait for the installation of all the packages.
 

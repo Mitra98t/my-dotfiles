@@ -58,7 +58,7 @@ If a configuration file already existed it will be renamed as `filename.old.<nan
 
 ### ZSH
 
-To safe some stuff from the old `.zshrc` configuration to the new one you can copy paste or source the old file using the last commented line in the new `.zshrc`
+To save some stuff from the old `.zshrc` configuration to the new one you can copy paste or source the old file using the last commented line in the new `.zshrc`
 
 ### TMUX
 
